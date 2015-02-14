@@ -1,0 +1,903 @@
+@font-face {
+  font-family: bebas;
+  src: url(../fonts/bebasneue-webfont.woff);
+}
+@font-face {
+  font-family: futuram;
+  src: url(../fonts/futuram-webfont.woff);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: futuram;
+}
+#twitter-widget-0 {
+  width: 100% !important;
+}
+#twitter-widget-0 > div.timeline-header.customisable-border > h1 > a {
+  font-family: futuram !important;
+}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+header {
+  overflow: hidden;
+  border-bottom: #333 1px solid;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+}
+header img {
+  float: left;
+  width: 7%;
+}
+header img.menu-icon {
+  float: right;
+  width: 40px;
+  height: 70px;
+  display: none;
+  cursor: pointer;
+}
+header nav {
+  float: left;
+  width: 93%;
+  text-align: center;
+  padding-right: 7%;
+  vertical-align: bottom;
+  margin-top: 25px;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 0 25px;
+}
+header nav ul li a {
+  color: #333333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+  transition: all 0.2s;
+}
+header nav ul li a:hover {
+  color: #8d9626;
+}
+header div#social {
+  float: right;
+}
+header div#social a img:first-child {
+  margin-right: 25px;
+}
+header div#social a img {
+  width: 40px;
+  height: 40px;
+}
+div#hero {
+  background-image: url(../images/hero.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 100px;
+}
+div#hero div {
+  width: 45%;
+  overflow: hidden;
+}
+div#hero div p {
+  color: white;
+  font-size: 30px;
+}
+div#hero div a {
+  color: white;
+  font-size: 26px;
+  border: 3px solid white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  width: 45%;
+  float: left;
+  padding: 10px 0;
+  text-align: center;
+  transition: all 0.3s;
+}
+div#hero div a:nth-child(3) {
+  float: right;
+}
+div#hero div a:hover {
+  color: #8d9626;
+  background-color: #fff;
+}
+div#heroLinks ul {
+  background-color: #5b5b5b;
+  padding: 20px 0;
+  margin: 0;
+  text-align: center;
+}
+div#heroLinks ul li {
+  display: inline-block;
+  margin: 0 6%;
+}
+div#heroLinks ul li a {
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: bebas;
+  transition: all 0.3s;
+}
+div#heroLinks ul li a:hover {
+  border-bottom: solid 1px white;
+}
+div#heroLinks.programs ul li {
+  margin: 0 2.4%;
+}
+div#mainContent {
+  padding-bottom: 50px;
+  margin: 0 50px;
+}
+div#mainContent h2 {
+  display: block;
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+div#mainContent div#CTA {
+  text-align: center;
+}
+div#mainContent div#CTA div.ctaOuter {
+  width: 25%;
+  margin: 0 25px;
+  background-image: url(../images/placeholder.jpg);
+  background-size: cover;
+  display: inline-block;
+  cursor: pointer;
+  height: 200px;
+}
+div#mainContent div#CTA div.ctaOuter div.ctaInner {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+div#mainContent div#CTA div.ctaOuter div.ctaInner p {
+  margin: 0;
+  color: white;
+  font-size: 22px;
+  text-decoration: underline;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+div#mainContent div#CTA div.ctaOuter div.ctaInner:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+div#mainContent.programs {
+  border-bottom: 0;
+}
+div#twitter {
+  border-top: 1px solid gray;
+  padding-bottom: 100px;
+}
+div#twitter h2 {
+  text-align: center;
+  margin: 40px 0;
+}
+div#about {
+  padding: 0 16%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 110px;
+}
+div#about h2 {
+  font-size: 30px;
+  margin: 70px 0 50px;
+}
+div#about p {
+  font-size: 20px;
+  text-align: left;
+}
+div#about a {
+  color: #8d9626;
+  font-size: 16px;
+}
+div#about.programs {
+  border-bottom: solid 1px #5b5b5b;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+}
+div#approach {
+  overflow: hidden;
+  margin: 0 7.5% 180px;
+}
+div#approach h2 {
+  margin: 0 0 40px;
+  font-size: 30px;
+}
+div#approach div.leftCol {
+  float: left;
+  width: 60%;
+}
+div#approach div.leftCol p {
+  margin-top: 0;
+}
+div#approach div.rightCol {
+  float: right;
+  width: 35%;
+}
+div#approach div.rightCol img {
+  width: 100%;
+}
+div#approach div.rightCol figcaption {
+  background-color: #eaecda;
+  border-left: solid 9px #8d9626;
+  padding: 7px;
+  margin-top: -5px;
+  font-size: 14px;
+  font-style: italic;
+  color: #686759;
+}
+div#board {
+  margin: 0 7.5%;
+}
+div#board h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+div#board h3 {
+  margin: 0px 0px 15px;
+  color: #686962;
+}
+div#board h3 span {
+  color: #8d9626;
+}
+div#board p {
+  margin-top: 0;
+}
+div#board div.director {
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+div#board div.director div.leftCol {
+  float: left;
+  width: 38%;
+}
+div#board div.director div.leftCol h3 {
+  text-align: right;
+}
+div#board div.director div.leftCol img {
+  width: 100%;
+}
+div#board div.director div.rightCol {
+  float: right;
+  width: 57%;
+}
+div.details {
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: #e5e5e3;
+  display: none;
+}
+div.details div.leftCol {
+  width: 28%;
+  float: left;
+}
+div.details div.leftCol img {
+  width: 100%;
+}
+div.details div.rightCol {
+  width: 65%;
+  float: right;
+}
+div.details div.rightCol h2 {
+  margin-top: 0;
+}
+div.details div.rightCol p.note {
+  text-align: center;
+}
+div.details div.rightCol a {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+div#botNav {
+  margin: 120px 7.5% 60px;
+  overflow: hidden;
+  border-top: solid 4px #ebebeb;
+  border-bottom: solid 4px #ebebeb;
+  padding: 15px 0;
+}
+div#botNav a {
+  color: #757373;
+  font-size: 32px;
+  font-family: bebas;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+div#botNav a span {
+  color: #8d9626;
+}
+div#botNav a:hover {
+  color: #8d9626;
+}
+div#botNav a:first-child {
+  float: left;
+}
+div#botNav a:last-child {
+  float: right;
+}
+div#list h2 {
+  font-size: 30px;
+}
+div#list ul {
+  padding: 0;
+}
+div#list ul li {
+  list-style: none;
+  display: inline-block;
+  width: 49%;
+  padding-left: 35px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin: 10px 0;
+  background-image: url(../images/check.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  font-size: 20px;
+  color: #686759;
+}
+footer.fullWidth {
+  overflow: hidden;
+  color: white;
+  background-color: #757373;
+}
+footer.fullWidth div.leftCol {
+  float: left;
+  width: 55%;
+}
+footer.fullWidth div.leftCol h3.social {
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+footer.fullWidth div.leftCol ul.social {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+}
+footer.fullWidth div.leftCol ul.social li.social {
+  display: inline-block;
+  font-size: 14px;
+  padding: 6px 40px 6px;
+}
+footer.fullWidth div.leftCol ul.social li.social a {
+  text-decoration: none;
+  color: white;
+}
+footer.fullWidth div.leftCol ul.social li.social:first-child {
+  background-image: url(../images/footerFacebook.png);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+footer.fullWidth div.leftCol ul.social li.social:nth-child(2) {
+  background-image: url(../images/twitterFooter.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  margin: 0 100px;
+}
+footer.fullWidth div.leftCol ul.social li.social:nth-child(3) {
+  background-image: url(../images/footerEmail.png);
+  background-position: left;
+  background-repeat: no-repeat;
+}
+footer.fullWidth div.leftCol div#footerLinks {
+  text-align: center;
+}
+footer.fullWidth div.leftCol div#footerLinks ul {
+  vertical-align: top;
+  width: 23%;
+  display: inline-block;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  text-align: left;
+}
+footer.fullWidth div.leftCol div#footerLinks ul li {
+  margin-bottom: 30px;
+}
+footer.fullWidth div.leftCol div#footerLinks ul li h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 30px 0;
+}
+footer.fullWidth div.leftCol div#footerLinks ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+footer.fullWidth div.leftCol div#footerLinks ul:nth-child(2) {
+  margin: 0 4%;
+}
+footer.fullWidth div.leftCol p {
+  text-align: left;
+  font-size: 14px;
+}
+footer.fullWidth div.rightCol {
+  float: right;
+  width: 35%;
+}
+footer.fullWidth div.rightCol h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+footer.fullWidth div.rightCol input,
+footer.fullWidth div.rightCol textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+}
+footer.fullWidth div.rightCol textarea {
+  height: 140px;
+}
+footer.fullWidth div.rightCol input.submit {
+  width: 40%;
+  font-size: 18px;
+  background-color: #8d9626;
+  color: white;
+  border: solid 2px #8d9626;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+footer.fullWidth div.rightCol input.submit:hover {
+  border: solid 2px white;
+}
+div#copyright {
+  background-color: #535252;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+div#copyright p {
+  margin: 0;
+}
+div#copyright a {
+  text-decoration: none;
+  color: white;
+}
+div#car-buttons {
+  text-align: center;
+  margin-bottom: 15px;
+}
+div#car-buttons div.car-button {
+  display: inline-block;
+  margin: 0 6%;
+  text-align: center;
+  cursor: pointer;
+}
+div#car-buttons div.car-button p {
+  color: #8d9626;
+  font-family: bebas;
+  font-size: 24px;
+  margin: 7px 0;
+  transition: all 0.2s;
+  padding-bottom: 3px;
+}
+div#car-buttons div.car-button:hover p {
+  border-bottom: 3px solid #8d9626;
+  padding-bottom: 0px;
+}
+#car {
+  background-color: #e5e5e3;
+  padding: 80px 0;
+}
+#owl-car div.item div.leftCol {
+  width: 30%;
+  float: left;
+}
+#owl-car div.item div.leftCol img {
+  width: 100%;
+}
+#owl-car div.item div.rightCol {
+  width: 65%;
+  float: right;
+}
+#owl-car div.item div.rightCol h3 {
+  font-size: 30px;
+  margin-top: 0;
+}
+#owl-car div.item div.rightCol p {
+  font-size: 16px;
+}
+#owl-car div.item div.rightCol a {
+  color: #8d9626;
+  font-family: futuram;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: right;
+  margin: 15px;
+}
+#owl-car div.item div.rightCol a span {
+  color: white;
+  background-color: #8d9626;
+  padding: 0 5px;
+}
+div#projectContent {
+  padding: 0 5% 40px;
+}
+div#projectContent P {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+div#projectContent img.main {
+  float: right;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+div#projectContent ul {
+  padding: 0 6%;
+  text-align: center;
+}
+div#projectContent ul li {
+  display: inline-block;
+  width: 20%;
+  margin: 2%;
+}
+div#projectContent a {
+  color: #757373;
+  font-size: 32px;
+  text-decoration: none;
+}
+div#projectContent a span {
+  color: #8d9626;
+}
+div#volunteer.mainContent {
+  text-align: center;
+  padding: 0 20%;
+}
+div#volunteer.mainContent form div {
+  margin: 20px 0;
+  vertical-align: middle;
+}
+div#volunteer.mainContent form div label {
+  width: 15%;
+  display: inline-block;
+  font-size: 24px;
+  text-align: left;
+  margin-right: 4%;
+  display: none;
+}
+div#volunteer.mainContent form div label.error {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+div#volunteer.mainContent form input,
+div#volunteer.mainContent form textarea {
+  width: 85%;
+  height: 85px;
+  border: solid 3px #686759;
+  font-size: 20px;
+  padding: 0 15px;
+}
+div#volunteer.mainContent form textarea {
+  height: 200px;
+  padding-top: 15px;
+}
+div#volunteer.mainContent form label.comments {
+  vertical-align: top;
+}
+div#volunteer.mainContent form input[type='submit'] {
+  background-color: #8d9626;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+div#volunteer.mainContent form input[type='submit']:hover {
+  border: solid 3px #8d9626;
+  background-color: white;
+  color: #8d9626;
+}
+div#volunteer.mainContent a {
+  color: #8d9626;
+}
+div#volunteer.mainContent h2 {
+  font-size: 30px;
+  margin: 40px 0;
+}
+#owl-car > div.owl-controls.clickable > div.owl-buttons > div.owl-prev {
+  float: left;
+  background-color: #8d9626;
+}
+#owl-car > div.owl-controls.clickable > div.owl-buttons > div.owl-next {
+  float: right;
+  background-color: #8d9626;
+}
+#owl-car > div.owl-controls.clickable > div.owl-pagination > div.owl-page.active > span {
+  background-color: #8d9626;
+}
+#owl-car > div.owl-controls.clickable > div.owl-pagination > div.owl-page > span {
+  background-color: #8d9626;
+}
+div.contactTop {
+  overflow: hidden;
+}
+div.contactTop h2 {
+  font-size: 30px;
+  text-align: center;
+}
+div.contactTop p.contactLeft {
+  display: block;
+  float: left;
+  width: 74%;
+  vertical-align: top;
+  margin-top: 0;
+}
+div.contactTop iframe.contactRight {
+  display: block;
+  float: right;
+  width: 25%;
+  height: 100%;
+}
+div.thankYou {
+  text-align: center;
+  padding: 100px 25%;
+}
+div.thankYou h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+div.thankYou h3 {
+  font-size: 26px;
+}
+@media (max-width: 1100px) {
+  header nav ul li {
+    margin: 0 10px;
+  }
+  header nav ul li a {
+    font-size: 16px;
+  }
+  div#hero div {
+    width: 65%;
+  }
+  div#hero div a {
+    font-size: 22px;
+  }
+  div#mainContent {
+    margin: 0 25px;
+  }
+  div#mainContent div#CTA div.ctaOuter {
+    margin: 0 5px;
+  }
+  footer.fullWidth {
+    padding: 0 10px;
+  }
+  footer.fullWidth div#footerSocial ul.social li.social:nth-child(2) {
+    margin: 0 1%;
+  }
+  footer.fullWidth div.leftCol div#footerLinks ul {
+    width: 28%;
+    margin: 0;
+  }
+  div#car-buttons div.car-button {
+    margin: 0 3%;
+  }
+  div#volunteer.mainContent {
+    padding: 0 15px;
+  }
+  div#heroLinks.programs a {
+    font-size: 16px;
+  }
+  div#list {
+    padding: 15px;
+  }
+  div.contactTop {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 800px) {
+  footer.fullWidth div#footerSocial ul.social li.social {
+    width: 50%;
+    padding: 15px;
+  }
+  footer.fullWidth div#footerSocial ul.social li.social:nth-child(2) {
+    margin: 0;
+  }
+  div#car-buttons div.car-button {
+    margin: 0 1%;
+    width: 15%;
+  }
+  div#car-buttons div.car-button img {
+    width: 100%;
+  }
+  div#car-buttons div.car-button p {
+    font-size: 20px;
+  }
+  #owl-car {
+    padding: 15px;
+  }
+  #owl-car div.item div.leftCol {
+    width: 100%;
+    float: none;
+    padding: 0 25%;
+  }
+  #owl-car div.item div.rightCol {
+    width: 100%;
+    float: none;
+  }
+  #owl-car div.item div.rightCol h3 {
+    margin-top: 15px;
+  }
+  div#heroLinks.programs ul li {
+    margin: 0 1%;
+  }
+  div#heroLinks.programs ul li a {
+    font-size: 14px;
+  }
+  div.contactTop p.contactLeft {
+    display: block;
+    float: none;
+    width: 100%;
+    vertical-align: top;
+    margin-top: 0;
+  }
+  div.contactTop iframe.contactRight {
+    display: block;
+    float: none;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+}
+@media (max-width: 700px) {
+  header {
+    padding: 10px;
+  }
+  header img {
+    width: 50px;
+  }
+  header img.menu-icon {
+    display: inline-block;
+  }
+  header div#social {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+  div#hero {
+    padding: 25px;
+  }
+  div#hero div {
+    width: 100%;
+  }
+  div#hero div p {
+    font-size: 26px;
+  }
+  div#mainContent {
+    margin: 0 5px;
+  }
+  div#mainContent div#CTA div.ctaOuter {
+    margin: 0;
+    width: 30%;
+    height: 100px;
+    background-position: center center;
+  }
+  div#mainContent div#CTA div.ctaOuter div.ctaInner p {
+    font-size: 18px;
+  }
+  div.details {
+    padding: 15px;
+  }
+  div.details div.rightCol {
+    width: 100%;
+    float: none;
+  }
+  div.details div.rightCol h2 {
+    margin-top: 10px;
+  }
+  div.details div.leftCol {
+    width: 100%;
+    float: none;
+    padding: 0 25%;
+  }
+  footer.fullWidth div.leftCol,
+  footer.fullWidth div.rightCol {
+    width: 100%;
+    float: none;
+  }
+  footer.fullWidth div.leftCol input.submit,
+  footer.fullWidth div.rightCol input.submit {
+    width: 100%;
+  }
+  div#heroLinks ul li {
+    margin: 0 3%;
+  }
+  div#heroLinks ul li a {
+    font-size: 18px;
+  }
+  div#approach {
+    margin-bottom: 50px;
+  }
+  div#approach div.leftCol,
+  div#approach div.rightCol {
+    width: 100%;
+    float: none;
+  }
+  div#approach div.rightCol {
+    padding: 5px 15% 0;
+  }
+  div#heroLinks.programs ul li {
+    margin: 0 1%;
+    padding: 15px;
+  }
+  div#heroLinks.programs ul li a {
+    font-size: 18px;
+  }
+  div#list ul li {
+    display: block;
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  div#board div.director div.leftCol,
+  div#board div.director div.rightCol {
+    width: 100%;
+    float: none;
+  }
+  div#board div.director div.leftCol h3,
+  div#board div.director div.rightCol h3 {
+    text-align: left;
+  }
+  div#car-buttons div.car-button p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  div#hero div p {
+    font-size: 22px;
+  }
+  div.details {
+    padding: 15px;
+  }
+  div.details div.rightCol {
+    width: 100%;
+    float: none;
+  }
+  div.details div.leftCol {
+    width: 100%;
+    float: none;
+    padding: 0 15%;
+  }
+  div#mainContent div#CTA div.ctaOuter div.ctaInner p {
+    font-size: 15px;
+  }
+  div#heroLinks ul li {
+    margin: 0 2%;
+  }
+  div#heroLinks ul li a {
+    font-size: 14px;
+  }
+  div#approach div.rightCol {
+    padding: 5px;
+  }
+  div#car-buttons div.car-button p {
+    font-size: 14px;
+  }
+  #owl-car div.item div.leftCol {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+}
